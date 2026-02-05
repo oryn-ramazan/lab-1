@@ -1,15 +1,26 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+public class RectangleExample {
+    public static void main(String[] args) {
+
+        // Создание объекта Scanner для ввода данных
+        Scanner scanner = new Scanner(System.in);
+
+        // Ввод длины прямоугольника
+        System.out.print("Введите длину прямоугольника: ");
+        double a = scanner.nextDouble();
+
+        // Ввод ширины прямоугольника
+        System.out.print("Введите ширину прямоугольника: ");
+        double b = scanner.nextDouble();
+
+        // Вычисление площади
+        double area = a * b;
+
+        // Вычисление периметра
+        double perimeter = 2 * (a + b);
+
+        // Вывод результатов
+        System.out.println("Площадь прямоугольника: " + area);
+        System.out.println("Периметр прямоугольника: " + perimeter);
     }
-}
